@@ -6,8 +6,6 @@ import ui from './ui/index.js';
 ui();
 router();
 
-
-
-// testing eslint and prettier
-var testing = 'testing'
-console.log(testing)
+// testing eslint and prettier ---success! But only manually so far
+const testing = 'testing';
+console.log(testing);
