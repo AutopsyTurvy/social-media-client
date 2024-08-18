@@ -1,4 +1,5 @@
 
+![GitHub Pages Deployment Status](https://github.com/AutopsyTurvy/social-media-client/actions/workflows/pages.yml/badge.svg)
 
 ![Build and Deploy Status](https://github.com/AutopsyTurvy/social-media-client/actions/workflows/deploy.yml/badge.svg)
 ![GitHub Pages Deployment Status](https://github.com/AutopsyTurvy/social-media-client/actions/workflows/pages.yml/badge.svg)
