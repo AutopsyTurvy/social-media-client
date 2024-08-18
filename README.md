@@ -1,19 +1,4 @@
 
-![GitHub Pages Deployment Status](https://github.com/AutopsyTurvy/social-media-client/actions/workflows/pages.yml/badge.svg)
-
-![Build and Deploy Status](https://github.com/AutopsyTurvy/social-media-client/actions/workflows/deploy.yml/badge.svg)
-![GitHub Pages Deployment Status](https://github.com/AutopsyTurvy/social-media-client/actions/workflows/pages.yml/badge.svg)
-
-
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![Tested with Jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://jestjs.io/)
-[![ESLint](https://img.shields.io/badge/linted_with-eslint-4b32c3.svg)](https://eslint.org/)
-[![Cypress](https://img.shields.io/badge/tested_with-Cypress-04C38E.svg)](https://www.cypress.io/)
-[![Bootstrap](https://img.shields.io/badge/bootstrap-5.1.3-blue.svg)](https://getbootstrap.com/)
-
-
-
 
 
 # Workflow, year 2- 
@@ -242,6 +227,24 @@ In the project directory, you can run the following commands:
 **note**
 To format all files according to Prettier’s rules, run:
     npm run format
+
+
+
+
+---
+
+
+
+![GitHub Pages Deployment Status](https://github.com/AutopsyTurvy/social-media-client/actions/workflows/pages.yml/badge.svg)
+
+
+![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![Tested with Jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://jestjs.io/)
+[![ESLint](https://img.shields.io/badge/linted_with-eslint-4b32c3.svg)](https://eslint.org/)
+[![Cypress](https://img.shields.io/badge/tested_with-Cypress-04C38E.svg)](https://www.cypress.io/)
+[![Bootstrap](https://img.shields.io/badge/bootstrap-5.1.3-blue.svg)](https://getbootstrap.com/)
+
 
 
 
