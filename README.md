@@ -1,6 +1,8 @@
 ---
 
 ![Login/ Register page](https://github.com/AutopsyTurvy/social-media-client/read-me-images/login-register.jpg)
+![Login/ Register page](https://github.com/AutopsyTurvy/social-media-client/Untitled/read-me-images/login-register.jpg)
+
 
 ---
 
@@ -9,6 +11,8 @@
 ---
 
 # JavaScript 2, year 2- 
+
+/Users/kitty/Documents/GitHub/social-media-client/Untitled/read-me-images/login-register.jpg
 
 This was our first project in the first year of our Studies-
 This was initially our introduction into design and CSS, then an exercise in stretching our JavaScript skills.
