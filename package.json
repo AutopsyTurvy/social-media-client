@@ -10,7 +10,8 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "test": "jest",
-    "test:jest": "jest --watchAll"
+    "test:jest": "jest --watchAll",
+    "test-unit": "jest"
   },
   "keywords": [],
   "author": "Noroff",
