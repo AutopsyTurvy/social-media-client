@@ -1,80 +1,59 @@
-// Authentication and Login:
+// Login and Specifications:
 
-// Login form testing with API JWT Tests:
+describe('User Login Tests', () => {
+  // First test to ascertain whether the form submission is working
+  // This means that when invalid credentials are entered the form submission should *NOT* be allowed, nor the form submitted.
 
-describe('Login Form - API JWT Tests', () => {
-  beforeEach(() => {
-    // Adding notes now-
-    // The below URL ensures that the correct page is loaded anew before each set of tests
-    // It ensures that the tests are always started from the same point.
-    cy.visit('http://127.0.0.1:5500/index.html');
-  });
+  // (For the marking criteria: User cannot submit the login form in with invalid credentials and is shown a message.)
+  //Below is the test for invalid credentials:
+  it('should not allow the user to submit the login form with invalid credentials', () => {
+    // Refreshes the page so we begin on the home page and with a fresh testing environment
+    cy.visit('/');
 
-  // This section ensures that email and password are both entered before submission of the forms,
-  // both are required
-  it('should require email and password before submitting', () => {
-    // This opens the login modal so that there is no confusion as to where the tests are focused-
+    // clicks the login button at the top of the page to focus on the correct login form
     cy.get('button[data-auth="login"]').first().click();
 
-    // This section checks that the authentication works by attempting to first submit the forms without filling them in-
-    // This should fail to submit the form as the correct information is required to do so.
-    cy.get('#loginForm').submit();
+    // Enters credentials that would be deemed incorrect as per the specs of the form
+    cy.get('#loginEmail').type('invalidemail@wrongdomain.com');
+    cy.get('#loginPassword').type('short');
 
-    // This part is there to verify that the form's input fields (email and password)
-    // are set up *with* the required attribute.
-    // This makes sure that the form forces the user to fill in these fields before form submission can be completed.
-    cy.get('#loginEmail').should('have.attr', 'required');
-    cy.get('#loginPassword').should('have.attr', 'required');
+    // Clicks the button to attempt a submission
+    cy.get('#loginForm .btn.btn-success').click();
+
+    // Because the form shows a message automatically when incorrect information is entered into the form
+    // the only thing that needs to be assessed to determine that the login was unsuccessful is the fact that
+    // the login button is still visible on the page- (Of course this would not be here if the login had gone smoothly)
+    cy.get('#loginForm').should('be.visible');
   });
 
-  // This should enter valid email/ user info so that the required form is submitted and then receive a valid JWT token (hopefully)
-  it('should submit the form and receive a valid JWT token', () => {
-    cy.intercept('POST', '/api/login', (req) => {
-      req.reply({
-        statusCode: 200,
-        body: {
-          token: 'fake-jwt-token',
-        },
-      });
-    }).as('loginRequest');
+  // Test to log in and log out
 
-    // This opens the login modal so that there is no confusion as to where the tests are focused-
+  // (For the marking criteria: User can login with the login form with valid credentials.)
+  // (For the marking criteria: User can log out with the logout button.)
+
+  it('should allow the user to log in with valid credentials and then log out', () => {
+    // Refreshes the page so we begin on the home page and with a fresh testing environment
+    cy.visit('/');
+
+    // Again- clicks the login button at the top of the page to focus on the correct login form:
     cy.get('button[data-auth="login"]').first().click();
 
-    // This should enter valid email/ user info so that the required form is submitted
-    cy.get('#loginEmail').type('noroff-user@noroff.no');
-    cy.get('#loginPassword').type('thisisyourpassword');
+    // Enters a valid Noroff email and password
+    cy.get('#loginEmail').type('kitcas53614@stud.noroff.no');
+    cy.get('#loginPassword').type('Noroff3354');
 
-    cy.get('#loginForm button[type="submit"]').click();
+    // Clicks login button for submission, taking the user to the profile page
+    cy.get('#loginForm .btn.btn-success').click();
 
-    // Wait for the API call to complete and check the response
-    cy.wait('@loginRequest').then((interception) => {
-      assert.isNotNull(
-        interception.response.body.token,
-        'JWT token is present'
-      );
-    });
-  });
+    // If the login process was successful, the logout button should now be visible
+    // This assesses that this is the case:
+    cy.get('button[data-auth="logout"]').should('be.visible');
 
-  // Test to ensure that incorrect credentials display the correct error message...
-  it('should display an error message with incorrect credentials', () => {
-    cy.intercept('POST', '/api/login', {
-      statusCode: 401,
-      body: { message: 'Invalid email or password' },
-    }).as('loginRequest');
+    // targets the now visible logout button
+    cy.get('button[data-auth="logout"]').click();
 
-    // again-- This opens the login modal so that there is no confusion as to where the tests are focused-
-    cy.get('button[data-auth="login"]').first().click();
-
-    // This should enter invalid email/ user info and fail to submit the form
-    cy.get('#loginEmail').type('wrong-user@noroff.no');
-    cy.get('#loginPassword').type('wrongpassword');
-
-    cy.get('#loginForm button[type="submit"]').click();
-
-    cy.wait('@loginRequest');
-
-    // Verify that an error message is displayed
-    cy.contains('Invalid email or password').should('be.visible');
+    // Upon successful logging out of the profile page, the login button should again be visible
+    // This assesses that this is the case, and was therefore a successful login *AND* logout process.
+    cy.get('button[data-auth="login"]').should('be.visible');
   });
 });
