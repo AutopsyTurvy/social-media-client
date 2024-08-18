@@ -1,6 +1,8 @@
 
 
-![Build Status](https://github.com/AutopsyTurvy/social-media-client/actions/workflows/ci.yml/badge.svg)
+![Build and Deploy Status](https://github.com/AutopsyTurvy/social-media-client/actions/workflows/deploy.yml/badge.svg)
+![GitHub Pages Deployment Status](https://github.com/AutopsyTurvy/social-media-client/actions/workflows/pages.yml/badge.svg)
+
 
 ![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
