@@ -233,6 +233,8 @@ To format all files according to Prettier’s rules, run:
 
 
 ---
+[![Build and Deploy](https://github.com/AutopsyTurvy/social-media-client/actions/workflows/deploy.yml/badge.svg)](https://github.com/AutopsyTurvy/social-media-client/actions/workflows/deploy.yml)
+[![Deploy static content to Pages](https://github.com/AutopsyTurvy/social-media-client/actions/workflows/pages.yml/badge.svg)](https://github.com/AutopsyTurvy/social-media-client/actions/workflows/pages.yml)
 
 
 
