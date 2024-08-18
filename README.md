@@ -1,6 +1,6 @@
 
 
-![Build Status](https://github.com/your-username/css-frameworks-ca/actions/workflows/ci.yml/badge.svg)
+![Build Status](https://github.com/AutopsyTurvy/social-media-client/workflows/ci.yml/badge.svg)
 ![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Tested with Jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://jestjs.io/)
