@@ -1,6 +1,6 @@
 ---
 
-![Login/ Register page](https://github.com/AutopsyTurvy/social-media-client/readmeImages/login-register.jpeg)
+![Login/ Register page](https://github.com/AutopsyTurvy/social-media-client/read-me-images/login-register.jpg)
 
 ---
 
