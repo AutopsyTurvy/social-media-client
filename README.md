@@ -237,10 +237,6 @@ To format all files according to Prettier’s rules, run:
 [![Deploy static content to Pages](https://github.com/AutopsyTurvy/social-media-client/actions/workflows/pages.yml/badge.svg)](https://github.com/AutopsyTurvy/social-media-client/actions/workflows/pages.yml)
 
 
-
-![GitHub Pages Deployment Status](https://github.com/AutopsyTurvy/social-media-client/actions/workflows/pages.yml/badge.svg)
-
-
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Tested with Jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://jestjs.io/)
 [![ESLint](https://img.shields.io/badge/linted_with-eslint-4b32c3.svg)](https://eslint.org/)
