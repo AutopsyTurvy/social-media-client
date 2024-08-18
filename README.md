@@ -1,98 +1,62 @@
----
-
-![Login/ Register page](https://github.com/AutopsyTurvy/social-media-client/read-me-images/login-register.jpg)
-![Login/ Register page](https://github.com/AutopsyTurvy/social-media-client/Untitled/read-me-images/login-register.jpg)
 
 
----
+# Workflow, year 2- 
 
-![readmeRegister](https://github.com/AutopsyTurvy/JavaScript2-CapChat-kitty-Alice-Case/assets/102550358/116bddc3-8f28-40e2-8bb1-0206eaab0c99)
 
----
 
-# JavaScript 2, year 2- 
+Workflow was a project that spanned our summer months.
+It was our first introduction to Unit testing and E2E testing- 
+We were provided a repo to pull on which we were to perform said tests via ESlint, Jest and Cypress.
 
-/Users/kitty/Documents/GitHub/social-media-client/Untitled/read-me-images/login-register.jpg
 
-This was our first project in the first year of our Studies-
-This was initially our introduction into design and CSS, then an exercise in stretching our JavaScript skills.
-The main purpose of this site was to advertise and sell games at competitive prices, to be able to view them and their specific details and to add them to your cart.
 
 
 Our Brief:
 
-    To complete the required features, you will also need to make use of GET, POST, PUT, and DELETE HTTP methods.
+    
+    Although Quality Assurance is a practice we should be concerned with throughout the development cycle, it is common to sprint towards an MVP version of an application before later improving the quality. In this exercise you are tasked with improving the quality of an existing application by providing various development workflows as well as a testing strategy.
 
-    You must use JSDocs to document at least one function. The minimum requirement is one example of well written JSDocs for a function that includes argument types, return types, a description and a usage example. If you have remaining time before delivery, you should use this to document all of your remaining functions.
+    There are two ways to complete this assignment:
 
-    Using localStorage is highly recommended, especially for storing JWT tokens.
+    Teams of two developers, working on each other’s applications
+    Solo developers, working on the provided application
+    The existing application package must feature:
 
-    A finished project fulfils the requirements below with an easy to use and error-free user interface.
-
-    Required features
-
-    The following user stories are required for a passing submission:
-
-    User with @noroff.no or @stud.noroff.no email can register profile
-    Registered user can login
-    User can view a post content feed
-    User can filter the post content feed
-    User can search the post content feed
-    User can view a post content item by ID
-    User can create a post content item
-    User can update a post content item
-    User can delete a post content item
-    Additional features
-
-    The following user stories are optional:
-
-    User can create a comment on a post
-    User can edit profile media
-    User can follow/unfollow a profile
+    A front-end login form connected to an API JWT endpoint
+    A front-end logout button connected to browser storage
+    Front-end CRUD functionality for at least one object type
+    A front-end profile page
+    The Noroff API Social Media client works well with this exercise.
     User can react to a post content item`
 
 
 
 
 
-## Workflow and "To Do" list- 
+## Important notes- 
 
-    Create or select one repository to use throughout this project.
-    Create a js2 branch from the default master or main branch.
-    You may use either Trello or GitHub Projects to manage your development tasks. If you are using Trello, please make sure that your board is public and that a link is provided in your readme.md file. Make sure to detail tasks accurately and divide them evenly if working a group.
-
-    Examples of detailed & accurate tasks (My tasks added as completed) see an "X" next to each completed task:
-
-
-    Create new repository for work,
-    Undo bootstrap stylings (I did not like the finstionality)
-    create new forms and style them
-    Fix file structure (I did this THREE TIMES!)
-    Create Login forms
-    create register forms
-    Style login and register forms- 
-    Add default functionality
-
-    Add 
-
-
-
-    Yet to:
     
+    Test Failure: In some cases, a well written test will still fail if the project does not meet the expectations. For example, the project may not show user error messages. In      this case the test case The user cannot submit the login form with invalid credentials and is shown a message. should fail. Writing tests that always pass is not the purpose       of this assignment.
+
+    Issues: While working on another project you may encounter bugs or issues with this project. If a test is failing, create a new Issue to contact the project owner. If you         wish to offer a fix for this bug, please do so in a separate Pull Request, for example from the branch worfklow-fixes.
+
+    Process
+    Find a partner to work with or select the example repository.
+    Fork the project repository to your GitHub account.
+    Create a new branch called workflow.
+    Configure the project with eslint, prettier and commit hooks.
+    Configure the project with GitHub Actions for build/deploy if required.
+    Record any bugs found during this process in the Issues tab.
+    Configure the project for Jest and Cypress.
+    Create tests to cover the required test cases.
+    Create a Pull Request from workflow into the default branch.
+    Request a review from your peers to help improve your submission.
+    Make any final changes based on this feedback.
+    Submit a link to the Open Pull Request on Moodle.
 
 
-    Create search form HTML
-    Search form SCSS styling
-    Filter posts function
-    Implement search event listener
-    Review the API Documentation and API Swagger.
-    Plan your approach, desired features and work strategy.
-    Implement the required features as per your work plan.
 
 
-    ---Review 2 of your peers projects. (4 per team)
-
-    Open a Pull Request from js2 into the default branch.
 
 
 
@@ -101,37 +65,12 @@ Our Brief:
 
 ** Important **
 
-I should first point out that the sign in and sign up pages have the same styles, so they will be found in the "sharedResources" folder.
-The same goes for the general styles in the feed and profile page, so these have also been placed in "sharedResources"-- I did this to avoid duplicate code, and hope it makes sense. If not in the folder corresponding to the page you seek, then you will find the code in shared resources.
-
-
-Social Media site that the user should be able to register to, log into, post onto-  they should be able to make a profile, edit and remove posts.
-
-
-### Description
-
--- Login/ register
-
-Should be able to register, first and foremost- this will create a profile for the user.
-Login should be able to do similar, but with a previously registered email and name etc.
-
-
-
- 
-
--- Profile--
-
-The most interactive of the pages on this relatively simple site- here the user should be able to post a "thought", edit the thought they posted, remove it, sort the other posts on the page- 
+Though the site purpose does as it should in regards to practicality- our main objective is to ensure that our testing ran smoothly.
+Because of this we made no changes to the already available code- merely installed the neccessary dependencies and test script.
 
 
 
 
--- Profile page
-
-Should display the information that the user has put on their register form, should display the posts they have made.
-
-
----
 
 
 ** Note **
@@ -150,23 +89,156 @@ Installing
 
 Clone the repo:
 
-    git clone git@github.com: https://github.com/AutopsyTurvy/JavaScript2-CapChat-kitty-Alice-Case.git
+ 
+    git clone git@github.com: https://github.com/AutopsyTurvy/social-media-client.git
 
-Install the dependencies: N/A
-
-    npm install
 
 Running
 
 To run the app, run the following commands:
 
     npm run start
+    
+
+
+
+
+### Development Dependencies
+
+
+- **`@eslint/js`**: The official ESLint package to lint JavaScript code.
+  - **Installation**: 
+    ```bash
+    npm install @eslint/js --save-dev
+    ```
+
+- **`concurrently`**: Used to run multiple scripts simultaneously during development.
+  - **Installation**: 
+    ```bash
+    npm install concurrently --save-dev
+    ```
+
+- **`cypress`**: End-to-end testing framework to ensure the application behaves as expected.
+  - **Installation**: 
+    ```bash
+    npm install cypress --save-dev
+    ```
+
+- **`eslint`**: Linter for identifying and fixing issues in JavaScript code, enforcing coding standards.
+  - **Installation**: 
+    ```bash
+    npm install eslint --save-dev
+    ```
+
+- **`globals`**: A package that provides a global variable list for ESLint.
+  - **Installation**: 
+    ```bash
+    npm install globals --save-dev
+    ```
+
+- **`husky`**: Runs Git hooks, like running linters before committing code, to enforce code quality.
+  - **Installation**: 
+    ```bash
+    npm install husky --save-dev
+    ```
+
+- **`jest`**: Testing framework for unit tests, ensuring the correctness of JavaScript code.
+  - **Installation**: 
+    ```bash
+    npm install jest --save-dev
+    ```
+
+- **`lint-staged`**: Runs linters on staged files before committing to maintain code quality.
+  - **Installation**: 
+    ```bash
+    npm install lint-staged --save-dev
+    ```
+
+- **`live-server`**: Development server that reloads in real-time as you edit your code.
+  - **Installation**: 
+    ```bash
+    npm install live-server --save-dev
+    ```
+
+- **`prettier`**: Code formatter to enforce consistent styling across the codebase.
+  - **Installation**: 
+    ```bash
+    npm install prettier --save-dev
+    ```
+
+- **`sass`**: Preprocessor for writing more maintainable and scalable CSS.
+  - **Installation**: 
+    ```bash
+    npm install sass --save-dev
+    ```
+
+### Notes
+
+- To install **all dependencies** at once, simply run:
+  ```bash
+  npm install
+
+
+### Notes
+
+- To install **all dependencies** at once, simply run:
+  ```bash
+  npm install
+
+
 
 
 (You may also choose to add to/ clone this code in another way than through the command line or terminal, and you may do this by opening it in your chosen code editor, via GitHub desktop, and subsequently, VScode. )
 
 
 ---
+
+
+## Configuration Information
+
+### Available Scripts
+
+In the project directory, you can run the following commands:
+
+- **`npm start`**: Starts the development server with live reloading. This runs `sass` in watch mode and serves the files using `live-server`.
+
+- **`npm run build`**: Compiles the SCSS files to CSS and outputs them to the `dist/css` directory.
+
+- **`npm run format`**: Formats all files in the project using Prettier to ensure consistent code style.
+
+- **`npm run cypress:open`**: Opens the Cypress end-to-end test runner for interactive testing.
+
+- **`npm run cypress:run`**: Runs the Cypress end-to-end tests in headless mode, typically used in CI pipelines.
+
+- **`npm test`**: Runs the Jest unit tests.
+
+- **`npm run test:jest`**: Runs Jest in watch mode, re-running tests on file changes.
+
+- **`npm run prepare`**: Installs Husky Git hooks. This is automatically run by Git hooks.
+
+### Linting and Formatting
+
+- **ESLint**: To lint your JavaScript files and automatically fix problems, run:
+  ```bash
+  npm run lint
+
+
+**note**
+To format all files according to Prettier’s rules, run:
+    npm run format
+
+
+
+## Workflow Status
+
+![Build Status](https://github.com/your-username/css-frameworks-ca/actions/workflows/ci.yml/badge.svg)
+[![codecov](https://codecov.io/gh/your-username/css-frameworks-ca/branch/main/graph/badge.svg)](https://codecov.io/gh/your-username/css-frameworks-ca)
+
+
+
+
+---
+
 
 Contributing
 
