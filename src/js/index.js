@@ -7,5 +7,5 @@ ui();
 router();
 
 // testing eslint and prettier --- will make small changes as i go to ensure working order
-var test = 'test';
+const test = 'test';
 console.log(test);
