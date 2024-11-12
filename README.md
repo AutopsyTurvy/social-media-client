@@ -115,6 +115,7 @@ npx cypress open
 ```
 
 
+
 [![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io/)
 [![ESLint](https://img.shields.io/badge/linter-ESLint-4B32C3.svg)](https://eslint.org/)
 [![Commitizen Friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
